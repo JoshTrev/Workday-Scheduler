@@ -85,8 +85,6 @@ $(".saveBtn").on("click", function(event){
     
     var currentButtonNumberClicked = ($(this).attr("saveButtonNumber"));
 
-    alert(currentButtonNumberClicked);
-
     var currentTextBoxContent = $(textBoxList[currentButtonNumberClicked]).val();
 
     localStorage.setItem("currentTextBoxContent" + currentButtonNumberClicked, currentTextBoxContent);
